@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>servlet25</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>서블릿 2.5</description>
+    <display-name>DemoServlet25</display-name>
+    <servlet-name>DemoServlet25</servlet-name>
+    <servlet-class>servlet.DemoServlet25</servlet-class>
+    <init-param>
+      <description>jsp버전</description>
+      <param-name>jsp</param-name>
+      <param-value>2.1</param-value>
+    </init-param>
+    <init-param>
+      <description>서블릿 버전</description>
+      <param-name>servlet</param-name>
+      <param-value>2.5</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DemoServlet25</servlet-name>
+    <url-pattern>/DemoServlet25</url-pattern>
+    <url-pattern>/servlet25.do</url-pattern>
+    <url-pattern>/servlet25.dj</url-pattern>
+  </servlet-mapping>
+</web-app>
